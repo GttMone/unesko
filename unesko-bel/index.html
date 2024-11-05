@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .slide {
+            background: white;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 1200px;
+            min-height: 80vh;
+            position: relative;
+        }
+        .slide-title {
+            color: #2c3e50;
+            font-size: 48px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .slide-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: space-between;
+            height: calc(80vh - 160px);
+        }
+        .text-content {
+            flex: 1;
+            font-size: 24px;
+        }
+        .image-placeholder {
+            background: #eee;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 600px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        ul {
+            margin: 0;
+            padding-left: 30px;
+            line-height: 1.6;
+        }
+        ul li {
+            margin-bottom: 15px;
+        }
+        .slide-number {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            color: #95a5a6;
+            font-size: 24px;
+        }
+        
+        /* Специално форматиране за първия слайд */
+        .title-slide {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title-slide .slide-title {
+            font-size: 64px;
+            margin-bottom: 30px;
+        }
+        .title-slide h2 {
+            font-size: 36px;
+            color: #34495e;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="slide-content title-slide">
+            <div class="slide-title">ЮНЕСКО и България</div>
+            <h2>Културно наследство и туристически потенциал</h2>
+            <div class="image-placeholder">
+                <img src="./images/1.webp" alt="ЮНЕСКО лого и български културни обекти колаж">
+            </div>
+        </div>
+        <div class="slide-number">1/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Какво е ЮНЕСКО?</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Специализирана агенция на ООН (основана 1945)</li>
+                    <li>Мисия: опазване на световното културно и природно наследство</li>
+                    <li>България е член от 1956 г.</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/2.jpg" alt="Сградата на ЮНЕСКО в Париж">
+            </div>
+        </div>
+        <div class="slide-number">2/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Рилски манастир</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Вписан в списъка през 1983 г.</li>
+                    <li>Най-големият манастир в България</li>
+                    <li>Уникална възрожденска архитектура</li>
+                    <li>Духовен и културен център</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/3.jpg" alt="Рилски манастир">
+            </div>
+        </div>
+        <div class="slide-number">3/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Боянска църква</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Вписана в списъка през 1979 г.</li>
+                    <li>Уникални стенописи от 13 век</li>
+                    <li>Реалистични портрети преди Ренесанса</li>
+                    <li>Изключителна архитектура</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/4.jpg" alt="Боянска църква">
+            </div>
+        </div>
+        <div class="slide-number">4/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Мадарски конник</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Вписан през 1979 г.</li>
+                    <li>Единствен скален релеф от този мащаб в Европа</li>
+                    <li>Височина: 23 метра</li>
+                    <li>Символ на българската държавност</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/5.jpg" alt="Мадарски конник">
+            </div>
+        </div>
+        <div class="slide-number">5/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Старият град Несебър</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Вписан през 1983 г.</li>
+                    <li>Над 3000 години история</li>
+                    <li>Съчетание на различни епохи</li>
+                    <li>Уникална църковна архитектура</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/6.jpg" alt="Стар Несебър">
+            </div>
+        </div>
+        <div class="slide-number">6/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Казанлъшка гробница</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Вписана през 1979 г.</li>
+                    <li>Датира от 4-3 век пр.н.е.</li>
+                    <li>Забележителни стенописи</li>
+                    <li>Тракийско културно наследство</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/7.jpg" alt="Казанлъшка гробница">
+            </div>
+        </div>
+        <div class="slide-number">7/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Ивановски скални църкви</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Вписани през 1979 г.</li>
+                    <li>Средновековен манастирски комплекс</li>
+                    <li>Уникални скални църкви</li>
+                    <li>Забележителни стенописи</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/8.webp" alt="Ивановски скални църкви">
+            </div>
+        </div>
+        <div class="slide-number">8/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Свещарска гробница</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Вписана през 1985 г.</li>
+                    <li>Тракийска царска гробница</li>
+                    <li>Уникална архитектура</li>
+                    <li>Свидетелство за гетската култура</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/9.jpg" alt="Свещарска гробница">
+            </div>
+        </div>
+        <div class="slide-number">9/10</div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-title">Нематериално културно наследство</div>
+        <div class="slide-content">
+            <div class="text-content">
+                <ul>
+                    <li>Бистришките баби - многогласно народно пеене</li>
+                    <li>Нестинарството - танци върху жарава</li>
+                    <li>Чипровско килимарство - традиционно занаятчийство</li>
+                </ul>
+            </div>
+            <div class="image-placeholder">
+                <img src="./images/10.jpg" alt="Колаж на нематериално културно наследство">
+            </div>
+        </div>
+        <div class="slide-number">10/10</div>
+    </div>
+</body>
+</html>
